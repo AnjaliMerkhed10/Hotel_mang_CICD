@@ -15,9 +15,9 @@ jobs:
       - name: Deploy over SSH
         uses: appleboy/ssh-action@v1.0.0
         with:
-          host: ${{ 203.109.124.70 }}
-          username: ${{ evoluzn }}
-          key: ${{ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCqEiUnbEXffGkkr8aZseRnpgBPckbNtTUidbdiabbZ9m2f4CYzRY04ezoaLcbjA8hPf+p6M93WYQBu9qBo8ZUfN5MEHXdQhBYybvCXh6EFQwzYMc0JLOWAM8wqkIJkP9Tco/ULNlm0cVpinpAOUv3lo6z/UaoMy5pWDwZwKfplnYGBk8Wdupfafgl3KKz8blOi3j8vQKi3zZdDizidAKnvmBdVZHYGWgv0OQCj1Pe7LeS+mKMwc6lZ3E4AossRhzNeq1mDFHl+F4IEbKoeCQc8dHPduQTDea+dexdezlCXGgkKzfEIn/A1OHyoOQA3KxD1r0wDyto0KuFMeFKNrGQzgNifF6aP3rSLeaZ3bG4EL/gK+uLFY9++HH5F/xA0HcT/Kdchi3fBA+ucXCt+Ij7EPMT9wPR2dxNAQjKpKlxFfeB+0u+ObSorNt+EnjPBJlmE+jZrK8GsShM1BYnahQLeCchU4ob/2IFBOHRGExbJhfwi0usgXmWMfGe9yKfIKHS3tb6wBpa1zCHL1h6ijQTB9lN8dzzAEVaTTc5iqnZG27OnXKhOxNdLNsjI1k13QT42eCir9CBMebCgh3IXanIbFs4MYdVwnPsoZdsTh21CtC6QINWZGzCsmcIVfKNHukJ4Fbybb6lBe3olMUQd4rl935GPhlMpaQxLov0R/TZqxQ== 'anjali@evoluzn.in' }}
+          host: 203.109.124.70
+          username: evoluzn
+          key: "-----BEGIN OPENSSH PRIVATE KEY----- ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCqEiUnbEXffGkkr8aZseRnpgBPckbNtTUidbdiabbZ9m2f4CYzRY04ezoaLcbjA8hPf+p6M93WYQBu9qBo8ZUfN5MEHXdQhBYybvCXh6EFQwzYMc0JLOWAM8wqkIJkP9Tco/ULNlm0cVpinpAOUv3lo6z/UaoMy5pWDwZwKfplnYGBk8Wdupfafgl3KKz8blOi3j8vQKi3zZdDizidAKnvmBdVZHYGWgv0OQCj1Pe7LeS+mKMwc6lZ3E4AossRhzNeq1mDFHl+F4IEbKoeCQc8dHPduQTDea+dexdezlCXGgkKzfEIn/A1OHyoOQA3KxD1r0wDyto0KuFMeFKNrGQzgNifF6aP3rSLeaZ3bG4EL/gK+uLFY9++HH5F/xA0HcT/Kdchi3fBA+ucXCt+Ij7EPMT9wPR2dxNAQjKpKlxFfeB+0u+ObSorNt+EnjPBJlmE+jZrK8GsShM1BYnahQLeCchU4ob/2IFBOHRGExbJhfwi0usgXmWMfGe9yKfIKHS3tb6wBpa1zCHL1h6ijQTB9lN8dzzAEVaTTc5iqnZG27OnXKhOxNdLNsjI1k13QT42eCir9CBMebCgh3IXanIbFs4MYdVwnPsoZdsTh21CtC6QINWZGzCsmcIVfKNHukJ4Fbybb6lBe3olMUQd4rl935GPhlMpaQxLov0R/TZqxQ== 'anjali@evoluzn.in'-----END OPENSSH PRIVATE KEY-----"
           script: |
             cd /home/evoluzn/Anjali/Testing_CI_CD/Hotel_mang_CICD
             git pull origin main
