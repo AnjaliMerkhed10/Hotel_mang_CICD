@@ -21,5 +21,4 @@ jobs:
           script: |
             cd /home/evoluzn/Anjali/Testing_CI_CD/Hotel_mang_CICD
             git pull origin main
-            pip install -r requirements.txt
             sudo systemctl restart myflaskapp
