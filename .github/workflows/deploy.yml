@@ -17,7 +17,7 @@ jobs:
         with:
           host: 203.109.124.70
           username: evoluzn
-          key:  SSH_KEY
+          key:  SSH_PRIVATE_KEY
           script: |
             cd /home/evoluzn/Anjali/Testing_CI_CD/Hotel_mang_CICD
             git pull origin main
