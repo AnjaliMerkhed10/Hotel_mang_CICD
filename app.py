@@ -45,7 +45,7 @@ def booking():
         return redirect(url_for('index'))
     return render_template('booking.html')
 
-@app.route('/admin')
+@app.route('/admin', methods=['GET', 'POST'])
 def admin():
     conn = sqlite3.connect('database.db')
     c = conn.cursor()
